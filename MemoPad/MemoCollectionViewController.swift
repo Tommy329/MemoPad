@@ -17,8 +17,11 @@ class MemoCollectionViewController: UIViewController,UICollectionViewDataSource 
         super.viewDidLoad()
         collectionView.dataSource = self
         }
-    func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
-        <#code#>
+    func collectionView(_ collectionView: UICollectionView,numberOfItemsInSection section : Int) -> Int { return 2
+    }
+    func collectionView(_ collectionView: UICollectionView, callForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        
     }
 
 
