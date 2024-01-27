@@ -9,14 +9,14 @@ import UIKit
 
 class MemoViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet  var titleTextfiled :UITextField!
-    @IBOutlet  var contenttextView : UITextView!
+    @IBOutlet  var contentTextView : UITextView!
     var savedate : UserDefaults = UserDefaults.standard
     var titles : [String] = []
     var contents : [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        savedate.register(defaults: [ "titles" :[], "contents" : [] ])
+        savedate.register(defaults: [ "titles" :[], "contents" :[] ])
         
         titles = savedate.object(forKey: "titles") as! [String]
         contents = savedate.object(forKey: "contents") as! [String]
@@ -26,19 +26,24 @@ class MemoViewController: UIViewController,UITextFieldDelegate {
         print(contents)
     }
     
-    @IBAction func saveMemo(){
+    @IBAction func saveMemo(_ sender: Any){
         let title = titleTextfiled.text!
-        let content = contenttextView.text!
+        let content = contentTextView.text!
         
         
         titles.append(title)
         contents.append(content)
         
         savedate.set(titles, forKey: "titles")
-        savedate.set(contents, forKey: "titles")
+        savedate.set(contents, forKey: "contents")
         
-        let alert: UIAlertController = UIAlertController(title: "保存", message: "メッセージの保存が完了しました。", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style : .default, handler: { action in self.navigationController?.popViewController(animated: true)}))
+        let alert : UIAlertController = UIAlertController(title: "保存", message:"メッセージの保存が完了しました。", preferredStyle: .alert)
+        alert.addAction(
+            UIAlertAction(title: "OK",
+                          style : .default,
+                          handler: { action in self.navigationController?.popViewController(animated: true)
+                          })
+        )
         present(alert, animated: true, completion: nil)
     }
     
