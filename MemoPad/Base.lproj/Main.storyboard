@@ -95,6 +95,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="nma-sr-caA"/>
+                    <connections>
+                        <outlet property="kisetu" destination="EWC-yK-od9" id="6Cs-1o-NBf"/>
+                        <outlet property="name" destination="woN-da-urd" id="cTB-aU-YGn"/>
+                        <outlet property="setumei" destination="tpN-y9-8up" id="b6g-xu-nac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
