@@ -17,6 +17,7 @@
 		17B181342B529FBA000AAD65 /* MemoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B181332B529FBA000AAD65 /* MemoCollectionViewController.swift */; };
 		17E58C3A2B64E81700D3C10B /* kigo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E58C392B64E81700D3C10B /* kigo.swift */; };
 		17E58C3C2B65145F00D3C10B /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E58C3B2B65145F00D3C10B /* ButtonViewController.swift */; };
+		17E58C402B653C2900D3C10B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E58C3F2B653C2900D3C10B /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		17B181332B529FBA000AAD65 /* MemoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCollectionViewController.swift; sourceTree = "<group>"; };
 		17E58C392B64E81700D3C10B /* kigo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kigo.swift; sourceTree = "<group>"; };
 		17E58C3B2B65145F00D3C10B /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		17E58C3F2B653C2900D3C10B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		17B181112B5273C0000AAD65 = {
 			isa = PBXGroup;
 			children = (
+				17E58C3F2B653C2900D3C10B /* FirstViewController.swift */,
 				17E58C3B2B65145F00D3C10B /* ButtonViewController.swift */,
 				17E58C392B64E81700D3C10B /* kigo.swift */,
 				17B181312B5276CB000AAD65 /* MemoViewController.swift */,
@@ -153,6 +156,7 @@
 				17B181322B5276CB000AAD65 /* MemoViewController.swift in Sources */,
 				17E58C3C2B65145F00D3C10B /* ButtonViewController.swift in Sources */,
 				17B181222B5273C0000AAD65 /* ViewController.swift in Sources */,
+				17E58C402B653C2900D3C10B /* FirstViewController.swift in Sources */,
 				17B1811E2B5273C0000AAD65 /* AppDelegate.swift in Sources */,
 				17B181342B529FBA000AAD65 /* MemoCollectionViewController.swift in Sources */,
 				17B181202B5273C0000AAD65 /* SceneDelegate.swift in Sources */,

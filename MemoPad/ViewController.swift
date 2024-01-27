@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         kigo(name: "熊", setumei: "冬眠する、雑食性のクマ科の動物", kisetu: "冬"),
         kigo(name: "葱", setumei: "十二月から二月頃に収穫する日本独特の冬野菜で、料理、薬味などさまざまに利用される", kisetu: "冬")
     ]
-    var index = Int.random(in: 0...16)
+    var index = Int.random(in: 0...15)
     func setUI() {
         names.text = kigokigo[index].name
         setumeis.text = kigokigo[index].setumei
