@@ -37,8 +37,8 @@ class ViewController: UIViewController {
     var index = Int.random(in: 0...16)
     func setUI() {
         names.text = kigokigo[index].name
-        setumeis.text = kigokigo[index].name
-        kisetus.text = kigokigo[index].name
+        setumeis.text = kigokigo[index].setumei
+        kisetus.text = kigokigo[index].kisetu
     }
     override func viewDidLoad() {
         setUI()
